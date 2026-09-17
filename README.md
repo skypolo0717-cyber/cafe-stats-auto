@@ -16,10 +16,12 @@
     "clubId": "20508270",
     "alias": "20daelee",
     "name": null,
+    "displayName": "체크인데이",
     "sheetGid": 0
   },
   {
     "input": "https://cafe.naver.com/다른카페별명",
+    "displayName": "짧은이름",
     "sheetGid": 863550945
   }
 ]
@@ -33,6 +35,9 @@
 - `sheetGid`는 구글시트에서 이 카페의 수치가 어느 탭에 기록될지를 정합니다 (아래
   "구글시트 자동 기록" 참고). 지정하지 않으면 구글시트에는 기록되지 않고
   `data/history.json`에만 남습니다.
+- `name`은 네이버 카페 페이지에서 읽어온 원래(대개 긴) 제목이 자동으로 채워집니다.
+  `displayName`을 넣어두면 구글시트/웹뷰어에 표시될 때 `name` 대신 그 짧은 이름이
+  쓰입니다. `displayName`은 자동으로 덮어써지지 않으니 한 번만 정해두면 됩니다.
 
 ## 구글시트 자동 기록
 

@@ -4,6 +4,7 @@
     "clubId": "20508270",
     "alias": "20daelee",
     "name": "체크인데이#일본여행,도쿄여행,후쿠오카여행,오사카,교토,삿포로",
+    "displayName": "체크인데이",
     "lastChecked": "2026-09-17",
     "sheetGid": 0
   },
@@ -13,6 +14,7 @@
     "clubId": "10110775",
     "alias": "jpnstory",
     "name": "네일동 : 일본여행카페 대표카페",
+    "displayName": "네일동",
     "lastChecked": "2026-09-17"
   },
   {
@@ -21,6 +23,7 @@
     "clubId": "20421433",
     "alias": "worldtravelcafe",
     "name": "[오사카홀릭] & 도쿄홀릭_오사카 여행, 도쿄, 후쿠오카,일본여행 대표카페",
+    "displayName": "오사카홀릭",
     "lastChecked": "2026-09-17"
   },
   {
@@ -29,6 +32,7 @@
     "clubId": "12660863",
     "alias": "d2d2d2",
     "name": "플라잉재팬 - 일본여행 후쿠오카 오사카 도쿄 홋카이도 자유여행",
+    "displayName": "플라잉재팬",
     "lastChecked": "2026-09-17"
   },
   {
@@ -37,6 +41,7 @@
     "clubId": "10331120",
     "alias": "musicstar2",
     "name": "★일본여행카페[재팬로그]오사카 도쿄 후쿠오카 오키나와 삿포로",
+    "displayName": "재팬로그",
     "lastChecked": "2026-09-17"
   },
   {
@@ -45,6 +50,7 @@
     "clubId": "25312684",
     "alias": "momsolleh",
     "name": "체크인유럽#유럽여행,스위스,스페인,이탈리아,프랑스,영국,터키 대표카페",
+    "displayName": "체크인유럽",
     "lastChecked": "2026-09-17"
   },
   {
@@ -53,6 +59,7 @@
     "clubId": "10209062",
     "alias": "firenze",
     "name": "유랑:유럽여행,런던,파리,로마,바르셀로나,스위스,포르투,프라하 대표카페",
+    "displayName": "유랑",
     "lastChecked": "2026-09-17"
   },
   {
@@ -61,6 +68,7 @@
     "clubId": "11211755",
     "alias": "eurodriving",
     "name": "\"유빙\" [유럽 자동차 여행 1위 카페]",
+    "displayName": "유빙",
     "lastChecked": "2026-09-17"
   },
   {
@@ -69,6 +77,7 @@
     "clubId": "28335242",
     "alias": "swissfriends",
     "name": "[스위스프렌즈] 스위스여행 함께 떠나요",
+    "displayName": "스위스프렌즈",
     "lastChecked": "2026-09-17"
   },
   {
@@ -77,6 +86,7 @@
     "clubId": "20353045",
     "alias": "cafeiceland",
     "name": "카페 아이슬란드 [대한민국 대표 아이슬란드 여행 동호회]",
+    "displayName": "카페아이슬란드",
     "lastChecked": "2026-09-17"
   },
   {
@@ -85,6 +95,7 @@
     "clubId": "10049249",
     "alias": "loverussia",
     "name": "[러사모] 블라디보스톡/모스크바/상트 러시아여행 No.1 대표카페",
+    "displayName": "러사모",
     "lastChecked": "2026-09-17"
   },
   {
@@ -93,6 +104,7 @@
     "clubId": "14552561",
     "alias": "moomge",
     "name": "히위고 한인택시 파리,로마,뉴욕,LA,하와이,일본,미국,유럽 여행",
+    "displayName": "히위고",
     "lastChecked": "2026-09-17"
   },
   {
@@ -101,6 +113,7 @@
     "clubId": "10368680",
     "alias": "card1004",
     "name": "[지바고] 튀르키예★그리스★이집트, 지중해 바람과 햇살 그리고",
+    "displayName": "지바고",
     "lastChecked": "2026-09-17"
   },
   {
@@ -109,6 +122,7 @@
     "clubId": "25158488",
     "alias": "bebettergirls",
     "name": "체크인발리&싱가포르#발리여행,싱가폴여행,인도네시아여행 카페",
+    "displayName": "체크인발리",
     "lastChecked": "2026-09-17"
   },
   {
@@ -117,6 +131,7 @@
     "clubId": "28022184",
     "alias": "jalanjalanindonesia",
     "name": "잘란 잘란 인도네시아(발리/족자카르타/길리 자유여행 정보교류) 대표카페",
+    "displayName": "잘란잘란",
     "lastChecked": "2026-09-17"
   },
   {
@@ -125,6 +140,7 @@
     "clubId": "10833000",
     "alias": "singaporelove",
     "name": "[싱사]싱가폴 사랑 - 싱가포르 대표 카페",
+    "displayName": "싱가폴사랑",
     "lastChecked": "2026-09-17"
   }
 ]

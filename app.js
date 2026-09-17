@@ -59,9 +59,9 @@ function render() {
 
     const nameTd = document.createElement("td");
     nameTd.className = "compare-name";
-    const displayName = cafe.name || `카페(${cafe.clubId})`;
+    const displayName = cafe.displayName || cafe.name || `카페(${cafe.clubId})`;
     nameTd.textContent = displayName;
-    nameTd.title = displayName;
+    nameTd.title = cafe.name || displayName;
 
     const memberTd = document.createElement("td");
     memberTd.textContent = r ? fmt(r.memberCount) : "-";
@@ -119,7 +119,7 @@ document.getElementById("exportAllBtn").addEventListener("click", () => {
     for (const cafe of state.cafes) {
       const r = latestRow(cafe.clubId);
       aoa.push([
-        cafe.name || `카페(${cafe.clubId})`,
+        cafe.displayName || cafe.name || `카페(${cafe.clubId})`,
         r ? r.memberCount : null,
         r ? r.newMembers : null,
         r ? r.visitorCount : null,

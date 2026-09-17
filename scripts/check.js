@@ -99,12 +99,13 @@ async function main() {
       const profile = await fetchCafeProfile(clubId, alias || extractAliasFromInput(cafe.input));
 
       if (!profile.ok) {
-        console.error(`[실패] ${cafe.name || cafe.input} (clubId=${clubId}) - 카페 활동 표를 찾지 못함`);
+        console.error(`[실패] ${cafe.displayName || cafe.name || cafe.input} (clubId=${clubId}) - 카페 활동 표를 찾지 못함`);
         continue;
       }
 
       if (profile.name) cafe.name = profile.name;
       cafe.lastChecked = today;
+      const label = cafe.displayName || cafe.name;
 
       if (!history[clubId]) history[clubId] = [];
       const hist = history[clubId];
@@ -122,12 +123,12 @@ async function main() {
 
       const todayRow = computeRows(hist)[0];
       if (cafe.sheetGid == null) {
-        console.warn(`[sheets] ${cafe.name} - cafes.json에 sheetGid가 없어 구글시트 기록을 건너뜁니다`);
+        console.warn(`[sheets] ${label} - cafes.json에 sheetGid가 없어 구글시트 기록을 건너뜁니다`);
       } else {
         if (!rowsByGid[cafe.sheetGid]) rowsByGid[cafe.sheetGid] = [];
         rowsByGid[cafe.sheetGid].push([
           today,
-          cafe.name,
+          label,
           todayRow.memberCount,
           todayRow.newMembers,
           todayRow.visitorCount,
@@ -139,7 +140,7 @@ async function main() {
       }
 
       console.log(
-        `[성공] ${cafe.name} - 회원 ${profile.memberCount}, 방문자 ${profile.visitorCount}, 인용 ${profile.citationCount ?? "-"}`
+        `[성공] ${label} - 회원 ${profile.memberCount}, 방문자 ${profile.visitorCount}, 인용 ${profile.citationCount ?? "-"}`
       );
       changed = true;
 

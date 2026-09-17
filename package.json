@@ -1,0 +1,12 @@
+{
+  "name": "cafe-stats-auto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "네이버 카페 회원수/방문자수/인용수를 매일 자동으로 조사해서 기록합니다 (GitHub Actions).",
+  "scripts": {
+    "check": "node scripts/check.js"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
+  }
+}

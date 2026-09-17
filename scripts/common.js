@@ -62,7 +62,12 @@ function daysBetween(dateFromStr, dateToStr) {
 // html: CafeProfileView.nhn 응답을 EUC-KR -> UTF-8로 디코딩한 문자열
 function parseCafeProfileHtml(html, clubId) {
   const nameMatch = html.match(/카페\s*이름<\/th>\s*<td>([\s\S]*?)<\/td>/);
-  const name = nameMatch ? nameMatch[1].replace(/<[^>]*>/g, "").trim() : null;
+  const name = nameMatch
+    ? nameMatch[1]
+        .replace(/<[^>]*>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+    : null;
 
   const memberMatch = html.match(/카페멤버\s*:\s*<span class="count">([\d,]+)<\/span>/);
   const postMatch = html.match(/전체\s*게시글\s*:\s*<span class="count">([\d,]+)<\/span>/);

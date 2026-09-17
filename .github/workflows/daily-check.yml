@@ -30,6 +30,9 @@ jobs:
 
       - name: 카페 수치 조사
         run: npm run check
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
 
       - name: 결과 커밋 & 푸시
         run: |

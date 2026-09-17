@@ -7,6 +7,7 @@
     "check": "node scripts/check.js"
   },
   "dependencies": {
+    "googleapis": "^144.0.0",
     "iconv-lite": "^0.6.3"
   }
 }

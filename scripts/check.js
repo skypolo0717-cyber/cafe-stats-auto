@@ -9,7 +9,9 @@ const {
   extractAliasFromInput,
   getKstDateString,
   parseCafeProfileHtml,
+  computeRows,
 } = require("./common.js");
+const { appendRows } = require("./sheets.js");
 
 const ROOT = path.join(__dirname, "..");
 const CAFES_PATH = path.join(ROOT, "cafes.json");
@@ -79,6 +81,7 @@ async function main() {
   }
 
   let changed = false;
+  const sheetRows = [];
 
   for (const cafe of cafes) {
     try {
@@ -117,6 +120,19 @@ async function main() {
       else hist.push(entry);
       hist.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
+      const todayRow = computeRows(hist)[0];
+      sheetRows.push([
+        today,
+        cafe.name,
+        todayRow.memberCount,
+        todayRow.newMembers,
+        todayRow.visitorCount,
+        todayRow.newVisitors,
+        todayRow.citationCount,
+        todayRow.newCitations,
+        todayRow.daysElapsed,
+      ]);
+
       console.log(
         `[성공] ${cafe.name} - 회원 ${profile.memberCount}, 방문자 ${profile.visitorCount}, 인용 ${profile.citationCount ?? "-"}`
       );
@@ -135,6 +151,12 @@ async function main() {
     console.log("cafes.json / data/history.json 갱신 완료");
   } else {
     console.log("변경 사항 없음");
+  }
+
+  try {
+    await appendRows(sheetRows);
+  } catch (e) {
+    console.error("[sheets] 구글시트 기록 실패:", e.message);
   }
 }
 

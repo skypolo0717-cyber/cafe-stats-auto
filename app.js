@@ -22,12 +22,6 @@ function fmtDelta(n) {
   if (n == null) return "-";
   return (n > 0 ? "+" : "") + n.toLocaleString("ko-KR");
 }
-function fmtDeltaWithDays(n, days) {
-  if (n == null) return "-";
-  const daysText = days != null ? ` (${days}일)` : "";
-  return fmtDelta(n) + daysText;
-}
-
 function render() {
   const tbody = document.getElementById("compareBody");
   tbody.innerHTML = "";
@@ -67,13 +61,13 @@ function render() {
     memberTd.textContent = r ? fmt(r.memberCount) : "-";
     const newMemberTd = document.createElement("td");
     newMemberTd.className = "delta";
-    newMemberTd.textContent = r ? fmtDeltaWithDays(r.newMembers, r.daysElapsed) : "-";
+    newMemberTd.textContent = r ? fmtDelta(r.newMembers) : "-";
 
     const visitorTd = document.createElement("td");
     visitorTd.textContent = r ? fmt(r.visitorCount) : "-";
     const newVisitorTd = document.createElement("td");
     newVisitorTd.className = "delta";
-    newVisitorTd.textContent = r ? fmtDeltaWithDays(r.newVisitors, r.daysElapsed) : "-";
+    newVisitorTd.textContent = r ? fmtDelta(r.newVisitors) : "-";
 
     tr.appendChild(nameTd);
     tr.appendChild(memberTd);
@@ -86,7 +80,7 @@ function render() {
       citTd.textContent = r ? fmt(r.citationCount) : "-";
       const citDeltaTd = document.createElement("td");
       citDeltaTd.className = "delta";
-      citDeltaTd.textContent = r ? fmtDeltaWithDays(r.newCitations, r.daysElapsed) : "-";
+      citDeltaTd.textContent = r ? fmtDelta(r.newCitations) : "-";
       tr.appendChild(citTd);
       tr.appendChild(citDeltaTd);
     }
@@ -109,7 +103,6 @@ const COMPARE_EXCEL_HEADER = [
   "누적 인용수",
   "인용 증감",
   "기준일",
-  "경과일",
 ];
 
 document.getElementById("exportAllBtn").addEventListener("click", () => {
@@ -127,7 +120,6 @@ document.getElementById("exportAllBtn").addEventListener("click", () => {
         r ? r.citationCount : null,
         r ? r.newCitations : null,
         r ? r.date : null,
-        r ? r.daysElapsed : null,
       ]);
     }
     const wb = XLSX.utils.book_new();

@@ -135,7 +135,6 @@ async function main() {
           todayRow.newVisitors,
           todayRow.citationCount,
           todayRow.newCitations,
-          todayRow.daysElapsed,
         ]);
       }
 

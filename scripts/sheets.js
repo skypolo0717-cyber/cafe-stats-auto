@@ -11,7 +11,6 @@ const HEADER = [
   "방문자 증감",
   "누적 인용수",
   "인용 증감",
-  "경과일",
 ];
 
 function getSheetsClient() {
@@ -106,7 +105,7 @@ async function appendRowsByGid(rowsByGid) {
       await ensureHeader(sheets, spreadsheetId, title);
       const appendRes = await sheets.spreadsheets.values.append({
         spreadsheetId,
-        range: `${title}!A:I`,
+        range: `${title}!A:H`,
         valueInputOption: "RAW",
         insertDataOption: "INSERT_ROWS",
         requestBody: { values: rows },

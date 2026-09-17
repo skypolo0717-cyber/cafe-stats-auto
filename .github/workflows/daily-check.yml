@@ -2,8 +2,8 @@ name: 카페 수치 매일 자동 조사
 
 on:
   schedule:
-    # 매일 09:00 KST = 00:00 UTC
-    - cron: "0 0 * * *"
+    # 매일 01:00 KST = 전날 16:00 UTC
+    - cron: "0 16 * * *"
   workflow_dispatch: {}
 
 permissions:

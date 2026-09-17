@@ -11,7 +11,7 @@ const {
   parseCafeProfileHtml,
   computeRows,
 } = require("./common.js");
-const { appendRows } = require("./sheets.js");
+const { appendRowsByGid } = require("./sheets.js");
 
 const ROOT = path.join(__dirname, "..");
 const CAFES_PATH = path.join(ROOT, "cafes.json");
@@ -81,7 +81,7 @@ async function main() {
   }
 
   let changed = false;
-  const sheetRows = [];
+  const rowsByGid = {};
 
   for (const cafe of cafes) {
     try {
@@ -121,17 +121,22 @@ async function main() {
       hist.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
       const todayRow = computeRows(hist)[0];
-      sheetRows.push([
-        today,
-        cafe.name,
-        todayRow.memberCount,
-        todayRow.newMembers,
-        todayRow.visitorCount,
-        todayRow.newVisitors,
-        todayRow.citationCount,
-        todayRow.newCitations,
-        todayRow.daysElapsed,
-      ]);
+      if (cafe.sheetGid == null) {
+        console.warn(`[sheets] ${cafe.name} - cafes.json에 sheetGid가 없어 구글시트 기록을 건너뜁니다`);
+      } else {
+        if (!rowsByGid[cafe.sheetGid]) rowsByGid[cafe.sheetGid] = [];
+        rowsByGid[cafe.sheetGid].push([
+          today,
+          cafe.name,
+          todayRow.memberCount,
+          todayRow.newMembers,
+          todayRow.visitorCount,
+          todayRow.newVisitors,
+          todayRow.citationCount,
+          todayRow.newCitations,
+          todayRow.daysElapsed,
+        ]);
+      }
 
       console.log(
         `[성공] ${cafe.name} - 회원 ${profile.memberCount}, 방문자 ${profile.visitorCount}, 인용 ${profile.citationCount ?? "-"}`
@@ -154,7 +159,7 @@ async function main() {
   }
 
   try {
-    await appendRows(sheetRows);
+    await appendRowsByGid(rowsByGid);
   } catch (e) {
     console.error("[sheets] 구글시트 기록 실패:", e.message);
   }

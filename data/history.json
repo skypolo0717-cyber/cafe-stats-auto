@@ -265,6 +265,13 @@
       "memberCount": 145324,
       "visitorCount": 21178405,
       "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:44.310Z",
+      "memberCount": 145323,
+      "visitorCount": 21179079,
+      "citationCount": null
     }
   ],
   "10110775": [
@@ -532,6 +539,13 @@
       "checkedAt": "2026-10-23T19:38:08.580Z",
       "memberCount": 2364755,
       "visitorCount": 908060562,
+      "citationCount": 54360000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:34.807Z",
+      "memberCount": 2365399,
+      "visitorCount": 908421785,
       "citationCount": 54360000
     }
   ],
@@ -801,6 +815,13 @@
       "memberCount": 2455246,
       "visitorCount": 475331576,
       "citationCount": 9720000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:40.047Z",
+      "memberCount": 2455324,
+      "visitorCount": 475365614,
+      "citationCount": 9720000
     }
   ],
   "10331120": [
@@ -1068,6 +1089,13 @@
       "checkedAt": "2026-10-23T19:38:11.914Z",
       "memberCount": 2328052,
       "visitorCount": 531507472,
+      "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:38.001Z",
+      "memberCount": 2328040,
+      "visitorCount": 531511663,
       "citationCount": null
     }
   ],
@@ -1337,6 +1365,13 @@
       "memberCount": 164598,
       "visitorCount": 16997091,
       "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:46.376Z",
+      "memberCount": 164611,
+      "visitorCount": 16998541,
+      "citationCount": null
     }
   ],
   "10833000": [
@@ -1604,6 +1639,13 @@
       "checkedAt": "2026-10-23T19:38:23.998Z",
       "memberCount": 414928,
       "visitorCount": 64327323,
+      "citationCount": 1410000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:49.560Z",
+      "memberCount": 414937,
+      "visitorCount": 64331163,
       "citationCount": 1410000
     }
   ],
@@ -1873,6 +1915,13 @@
       "memberCount": 124445,
       "visitorCount": 21264496,
       "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:41.107Z",
+      "memberCount": 124446,
+      "visitorCount": 21265109,
+      "citationCount": null
     }
   ],
   "12660863": [
@@ -2140,6 +2189,13 @@
       "checkedAt": "2026-10-23T19:38:10.816Z",
       "memberCount": 523403,
       "visitorCount": 117818480,
+      "citationCount": 7620000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:36.956Z",
+      "memberCount": 523458,
+      "visitorCount": 117828046,
       "citationCount": 7620000
     }
   ],
@@ -2409,6 +2465,13 @@
       "memberCount": 119825,
       "visitorCount": 6866559,
       "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:45.350Z",
+      "memberCount": 119829,
+      "visitorCount": 6866715,
+      "citationCount": null
     }
   ],
   "20353045": [
@@ -2676,6 +2739,13 @@
       "checkedAt": "2026-10-23T19:38:17.352Z",
       "memberCount": 66723,
       "visitorCount": 7230763,
+      "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:43.207Z",
+      "memberCount": 66733,
+      "visitorCount": 7231596,
       "citationCount": null
     }
   ],
@@ -2945,6 +3015,13 @@
       "memberCount": 796782,
       "visitorCount": 142080937,
       "citationCount": 22300000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:35.851Z",
+      "memberCount": 797046,
+      "visitorCount": 142155942,
+      "citationCount": 22300000
     }
   ],
   "20508270": [
@@ -3212,6 +3289,13 @@
       "checkedAt": "2026-10-23T19:38:07.503Z",
       "memberCount": 603264,
       "visitorCount": 84451385,
+      "citationCount": 13810000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:33.772Z",
+      "memberCount": 603447,
+      "visitorCount": 84509292,
       "citationCount": 13810000
     }
   ],
@@ -3481,6 +3565,13 @@
       "memberCount": 860538,
       "visitorCount": 241326608,
       "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:47.496Z",
+      "memberCount": 860571,
+      "visitorCount": 241333069,
+      "citationCount": null
     }
   ],
   "25312684": [
@@ -3748,6 +3839,13 @@
       "checkedAt": "2026-10-23T19:38:12.983Z",
       "memberCount": 739033,
       "visitorCount": 118981163,
+      "citationCount": 22190000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:39.032Z",
+      "memberCount": 739307,
+      "visitorCount": 119055968,
       "citationCount": 22190000
     }
   ],
@@ -4017,6 +4115,13 @@
       "memberCount": 299636,
       "visitorCount": 38922697,
       "citationCount": 4300000
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:48.502Z",
+      "memberCount": 299722,
+      "visitorCount": 38934474,
+      "citationCount": 4300000
     }
   ],
   "28335242": [
@@ -4284,6 +4389,13 @@
       "checkedAt": "2026-10-23T19:38:16.253Z",
       "memberCount": 171096,
       "visitorCount": 18162996,
+      "citationCount": null
+    },
+    {
+      "date": "2026-10-25",
+      "checkedAt": "2026-10-24T18:26:42.159Z",
+      "memberCount": 171102,
+      "visitorCount": 18164886,
       "citationCount": null
     }
   ]
